@@ -3,19 +3,19 @@
 @tailwind utilities;
 
 :root {
-  --color-primary: rgb(23, 107, 135);
-  --color-secondary: rgb(100, 204, 197);
-  --color-accent: rgb(218, 255, 251);
-  --color-background: rgb(0, 28, 48);
-  --color-foreground: rgb(255, 255, 255);
+  --color-primary: rgb(45, 45, 45);
+  --color-secondary: rgb(120, 85, 50);
+  --color-accent: rgb(190, 150, 100);
+  --color-background: rgb(242, 236, 226);
+  --color-foreground: rgb(20, 20, 20);
 }
 
 .dark {
-  --color-primary: rgb(0, 28, 48);
-  --color-secondary: rgb(218, 255, 251);
-  --color-accent: rgb(100, 204, 197);
-  --color-background: rgb(10, 10, 10);
-  --color-foreground: rgb(230, 244, 241);
+  --color-primary: rgb(230, 230, 230);
+  --color-secondary: rgb(180, 140, 100);
+  --color-accent: rgb(220, 180, 120);
+  --color-background: rgb(25, 25, 25);
+  --color-foreground: rgb(240, 240, 240);
 }
 
 body {
@@ -24,11 +24,68 @@ body {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.glass {
-  background: rgba(255, 255, 255, 0.2);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
+/* ------------------Animations------------------ */
+
+.hover-scale:hover {
+  transform: scale(1.05);
+  transition: transform 0.5s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animateFadeIn {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes wave {
+  0% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(10deg);
+  }
+  40% {
+    transform: rotate(-10deg);
+  }
+  60% {
+    transform: rotate(10deg);
+  }
+  80% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.animate-wave {
+  display: inline-block;
+  animation: wave 1.5s infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+    border-right: none;
+  }
+}
+
+.typing {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 3px solid var(--color-accent);
+  animation: typing 2s steps(10) forwards;
 }
