@@ -1,29 +1,8 @@
+import { ExpericeData, Skills } from "@/utils/Constants";
 import Image from "next/image";
 import React from "react";
 
 const AboutHero = () => {
-  const ExpericeData = [
-    {
-      company: "Rizzle AI",
-      role: "Trainee Engineer - Frontend",
-      timeline: "Sep 2024 - Present",
-      logo: "https://images.softwaresuggest.com/software_logo/rizzleai-20240605175518.jpg",
-    },
-  ];
-
-  const skills = [
-    "React.js",
-    "Next.js",
-    "TypeScript",
-    "JavaScript",
-    "Tailwind CSS",
-    "GraphQL",
-    "Hygraph",
-    "Git & GitHub",
-    "Postman",
-    "Vercel",
-  ];
-
   return (
     <div className="flex flex-col gap-8 items-center px-6 md:px-12 py-16 w-full min-h-full animateFadeIn">
       <div className="w-[100px] h-[100px] md:w-[250px] md:h-[250px] rounded-full overflow-hidden bg-secondary flex justify-center items-center">
@@ -47,7 +26,6 @@ const AboutHero = () => {
         .
       </div>
 
-      {/* Experience Section */}
       <div className="rounded-md p-3 border-2 max-w-2xl w-full">
         {ExpericeData.map((curr, ind) => (
           <div className="flex items-center gap-8 p-2" key={ind}>
@@ -73,12 +51,14 @@ const AboutHero = () => {
         ))}
       </div>
 
-      {/* Skills Section */}
       <div className="w-full max-w-2xl mt-10">
         <h2 className="text-2xl font-bold text-accent mb-4">Skills</h2>
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4 text-center">
-          {skills.map((skill, index) => (
-            <span key={index} className="bg-secondary p-2 rounded-lg">
+          {Skills.map((skill, index) => (
+            <span
+              key={index}
+              className="bg-secondary text-background p-2 rounded-lg hover:bg-accent hover:text-primary transition-colors"
+            >
               {skill}
             </span>
           ))}
