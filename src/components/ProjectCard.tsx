@@ -1,51 +1,59 @@
 import { IProjectsData } from "@/Types/IData";
+import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 
 const ProjectCard = (props: IProjectsData) => {
   return (
-    <div className="relative w-80 h-60 rounded-lg overflow-hidden transition-all duration-300 group">
+    <div className="relative w-72 h-60 md:w-[28rem] md:h-80 lg:md-[30rem] rounded-lg overflow-hidden transition-all duration-300 group shadow-md">
       <div
         className="absolute inset-0 bg-cover bg-center transition-transform duration-300 z-0 group-hover:transform group-hover:scale-110"
         style={{ backgroundImage: `url('${props.imageUrl}')` }}
       ></div>
 
-      <div className="absolute bottom-0 w-full h-10 bg-secondary group-hover:h-full p-1 text-background transition-all duration-300 group-hover:backdrop-blur-md z-10 flex flex-col">
-        <h3 className="w-full h-10 flex justify-center items-center font-semibold transition-all duration-300 group-hover:h-12 ">
+      <div className=" flex flex-col items-center justify-around absolute bottom-0 w-full h-14 bg-primaryLight group-hover:h-full md:p-2 text-background transition-all duration-300 group-hover:backdrop-blur-md z-10 ">
+        <h2 className="w-full h-10 text-lg flex justify-center items-center font-semibold transition-all duration-300 ">
           {props.title}
-        </h3>
+        </h2>
 
-        <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col gap-3 mt-4">
-          <p className="text-sm">{props.Description}</p>
-          <div className="flex flex-wrap gap-2">
-            {props.tags.map((tag, ind) => (
+        <div className="opacity-0 h-full flex flex-col items-center justify-around group-hover:opacity-100 transition-opacity duration-300 mt-4 p-1 md:p-4">
+          <p className=" text-xs md:text-lg">{props.Description}</p>
+          <div className="flex gap-3">
+            {props.tags.map((tech, index) => (
               <span
-                key={ind}
-                className="bg-secondary text-primary px-2 py-1 rounded-lg text-xs"
+                key={index}
+                className="bg-secondary p-1 md:px-2 text-sm md:text-md rounded-md hover:bg-accent hover:text-primary transition-colors cursor-pointer"
               >
-                {tag}
+                {tech}
               </span>
             ))}
           </div>
 
-          <div className="flex justify-between mt-2">
-            {props.sourceCode && (
-              <a
-                href={props.sourceCode}
-                target="_blank"
-                className="text-sm text-blue-400 hover:underline"
-              >
-                Source Code
-              </a>
-            )}
-            {props.liveLink && (
-              <a
-                href={props.liveLink}
-                target="_blank"
-                className="text-sm text-green-400 hover:underline"
-              >
-                Live Demo
-              </a>
-            )}
-          </div>
+          {props.sourceCode && props.liveLink && (
+            <div className="flex justify-between items-center w-full">
+              {props.sourceCode && (
+                <a
+                  href={props.sourceCode}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="w-max h-6 p-1 md:p-4 flex justify-between items-center gap-2 rounded-md border cursor-pointer hover:bg-background hover:text-primary transition-colors"
+                >
+                  <FaGithub className="text-lg" />
+                  <span>Source Code</span>
+                </a>
+              )}
+
+              {props.liveLink && (
+                <a
+                  href={props.liveLink}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="w-max h-6 p-1 md:p-4 flex justify-between items-center gap-2 rounded-md border cursor-pointer hover:bg-background hover:text-primary transition-colors"
+                >
+                  <FaExternalLinkAlt className="text-lg" />
+                  <span>Live Demo</span>
+                </a>
+              )}
+            </div>
+          )}
         </div>
       </div>
     </div>

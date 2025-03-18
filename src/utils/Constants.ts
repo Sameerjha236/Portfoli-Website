@@ -4,7 +4,7 @@ export const ExpericeData: IExperienceData[] = [
   {
     company: "Rizzle AI",
     role: "Trainee Engineer - Frontend",
-    timeline: "Sep 2024 - Present",
+    timeline: "Sep 2024 - Mar 2025",
     logo: "https://images.softwaresuggest.com/software_logo/rizzleai-20240605175518.jpg",
   },
 ];
@@ -14,12 +14,17 @@ export const Skills: string[] = [
   "Next.js",
   "TypeScript",
   "JavaScript",
+  "C++",
+  "HTML",
+  "CSS",
+  "Python",
+  "Flask",
   "Tailwind CSS",
   "GraphQL",
-  "Hygraph",
   "Git & GitHub",
-  "Postman",
-  "Vercel",
+  "Node.js",
+  "Express.js",
+  "MongoDB",
 ];
 
 export const ProjectsData: IProjectsData[] = [

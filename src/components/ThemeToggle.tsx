@@ -27,7 +27,7 @@ const ThemeToggle = () => {
     >
       <div
         className={`w-6 h-6 flex items-center justify-center rounded-full bg-white dark:bg-black shadow-md transform transition-transform duration-300 ${
-          isDark ? "translate-x-6" : "translate-x-0"
+          isDark ? "translate-x-4 md:translate-x-6" : "translate-x-0"
         }`}
       >
         {isDark ? (

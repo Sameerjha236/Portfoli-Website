@@ -1,10 +1,11 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
 const Hero = () => {
   return (
-    <div className="flex flex-col md:flex-row justify-around items-center px-6 md:px-12 py-16 w-full h-full animateFadeIn">
+    <div className="flex flex-col md:flex-row justify-around items-center px-6 md:px-12 py-16 w-full min-h-full animateFadeIn">
       <div className="md:w-1/2 w-full text-center md:text-left max-w-lg flex flex-col justify-center">
         <h2 className="text-xl md:text-2xl mb-2">
           Hello, I&apos;m <span className="inline-block animate-wave">👋</span>
@@ -15,9 +16,10 @@ const Hero = () => {
         </h1>
 
         <p className="text-lg md:text-xl leading-relaxed">
-          A Frontend Developer with 6 months of experience, currently working at
-          Rizzle AI. Passionate about optimizing performance and crafting
-          visually appealing, user-friendly websites.
+          A Frontend Developer with 6 months of experience, previously at Rizzle
+          AI. Passionate about building high-performance, visually stunning, and
+          user-friendly web applications, with a keen focus on optimization and
+          seamless user experiences.
         </p>
 
         <div className="flex justify-center md:justify-start space-x-6 mt-5">
@@ -61,26 +63,25 @@ const Hero = () => {
           <a
             href="/assets/Sameer_Jha.pdf"
             download
-            className="bg-accent px-6 py-3 border border-primary rounded-lg text-lg font-semibold hover:bg-background transition"
+            className="bg-secondary text-background px-3 py-1 md:px-6 md:py-3 border border-primary rounded-lg text-lg font-semibold hover:bg-accent transition"
           >
             Download Resume
           </a>
-          <a
-            href="#projects"
-            className="border border-primary text-primary px-6 py-3 rounded-lg text-lg font-semibold hover:bg-accent hover:text-foreground transition"
-          >
-            View My Work
-          </a>
+          <Link href="/projects">
+            <p className="border border-primary text-primary px-3 py-1  md:px-6 md:py-3 rounded-lg text-lg font-semibold hover:bg-accent hover:text-foreground transition">
+              View My Work
+            </p>
+          </Link>
         </div>
       </div>
 
-      <div className="relative w-[280px] h-[280px] md:w-[400px] md:h-[400px] rounded-full overflow-hidden bg-secondary flex justify-center items-center">
+      <div className="mt-12 md:mt-0 w-[280px] h-[280px] md:w-[400px] md:h-[400px] rounded-full overflow-hidden bg-secondary flex justify-center items-center">
         <Image
           src="/assets/Profile.JPG"
-          width={400}
-          height={400}
+          width={200}
+          height={200}
           alt="Sameer Jha"
-          className="w-full h-full object-cover rounded-full hover-scale"
+          className="w-full h-full object-cover rounded-full hover-scale shadow-lg"
           priority
         />
       </div>

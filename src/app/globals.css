@@ -4,6 +4,7 @@
 
 :root {
   --color-primary: rgb(45, 45, 45);
+  --color-primary-light: rgb(45, 45, 45, 0.8);
   --color-secondary: rgb(120, 85, 50);
   --color-accent: rgb(190, 150, 100);
   --color-background: rgb(242, 236, 226);
@@ -12,6 +13,7 @@
 
 .dark {
   --color-primary: rgb(230, 230, 230);
+  --color-primary-light: rgb(230, 230, 230, 0.8);
   --color-secondary: rgb(180, 140, 100);
   --color-accent: rgb(220, 180, 120);
   --color-background: rgb(25, 25, 25);
