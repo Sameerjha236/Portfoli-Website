@@ -70,7 +70,7 @@ export const ProjectsData: IProjectsData[] = [
     Description:
       "A wiki-style book browser that contains data on all available books with an infinite scroll functionality for seamless browsing.",
     tags: ["React.js", "Infinite Scroll"],
-    sourceCode: "",
+    sourceCode: "https://github.com/Sameerjha236/Book_Browser",
     liveLink: "https://book-browser-fawn.vercel.app/",
   },
   {

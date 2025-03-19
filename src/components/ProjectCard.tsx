@@ -27,7 +27,7 @@ const ProjectCard = (props: IProjectsData) => {
             ))}
           </div>
 
-          {props.sourceCode && props.liveLink && (
+          {(props.sourceCode || props.liveLink) && (
             <div className="flex justify-between items-center w-full">
               {props.sourceCode && (
                 <a
