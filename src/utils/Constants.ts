@@ -33,7 +33,7 @@ export const ProjectsData: IProjectsData[] = [
     imageUrl: "assets/projects/Youtube.png",
     Description:
       "A YouTube Clone made using React.js and Tailwind CSS. It fetches videos using the YouTube API and displays them in a grid layout. It also includes a search functionality.",
-    tags: ["React.js", "Tailwind CSS", "YouTube API"],
+    tags: ["React.js", "Material UI", "Rapid API"],
     sourceCode: "https://github.com/Sameerjha236/Youtube-Clone",
     liveLink: "https://youtube-clone-flax-nine.vercel.app/",
   },

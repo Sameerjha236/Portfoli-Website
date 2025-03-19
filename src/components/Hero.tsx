@@ -15,7 +15,7 @@ const Hero = () => {
           Sameer <span className="text-secondary">Jha</span>
         </h1>
 
-        <p className="text-lg md:text-xl leading-relaxed">
+        <p className="text-lg md:text-xl leading-relaxed text-justify ">
           A Frontend Developer with 6 months of experience, previously at Rizzle
           AI. Passionate about building high-performance, visually stunning, and
           user-friendly web applications, with a keen focus on optimization and
@@ -63,7 +63,7 @@ const Hero = () => {
           <a
             href="/assets/Sameer_Jha.pdf"
             download
-            className="bg-secondary text-background px-3 py-1 md:px-6 md:py-3 border border-primary rounded-lg text-lg font-semibold hover:bg-accent transition"
+            className="bg-secondary text-background px-3 py-1 md:px-6 md:py-3 rounded-lg text-lg font-semibold hover:bg-accent transition"
           >
             Download Resume
           </a>

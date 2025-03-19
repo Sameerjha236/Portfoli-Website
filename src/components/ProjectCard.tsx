@@ -15,7 +15,9 @@ const ProjectCard = (props: IProjectsData) => {
         </h2>
 
         <div className="opacity-0 h-full flex flex-col items-center justify-around group-hover:opacity-100 transition-opacity duration-300 mt-4 p-1 md:p-4">
-          <p className=" text-xs md:text-lg">{props.Description}</p>
+          <p className=" text-xs md:text-lg leading-relaxed text-justify ">
+            {props.Description}
+          </p>
           <div className="flex gap-3">
             {props.tags.map((tech, index) => (
               <span

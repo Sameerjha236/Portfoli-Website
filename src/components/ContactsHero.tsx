@@ -14,7 +14,7 @@ const ContactsHero = () => {
         <h2 className="text-4xl md:text-6xl font-bold mb-4 text-secondary">
           Let&apos;s Connect
         </h2>
-        <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
+        <p className="text-lg md:text-xl text-muted-foreground leading-relaxed text-justify ">
           Have a question, project proposal, or just want to say hello? I’m a
           Frontend Developer passionate about building seamless, interactive web
           experiences. Feel free to reach out!

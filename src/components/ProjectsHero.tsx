@@ -8,7 +8,7 @@ const ProjectsHero = () => {
         <h2 className="text-4xl md:text-6xl font-bold mb-3 text-secondary">
           My Projects
         </h2>
-        <p className="text-lg md:text-xl leading-relaxed">
+        <p className="text-lg md:text-xl leading-relaxed  text-justify ">
           Explore some of the projects I&apos;ve worked on, showcasing my skills
           in frontend development.
         </p>
