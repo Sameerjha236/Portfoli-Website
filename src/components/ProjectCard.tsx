@@ -36,7 +36,7 @@ const ProjectCard = (props: IProjectsData) => {
                   href={props.sourceCode}
                   target="_blank"
                   rel="noreferrer"
-                  className="w-max h-6 p-1 md:p-4 flex justify-between items-center gap-2 rounded-md border cursor-pointer hover:bg-background hover:text-primary transition-colors"
+                  className="w-max h-6 p-1 md:p-4 flex justify-between items-center gap-2 rounded-md border border-background cursor-pointer hover:bg-background hover:text-primary transition-colors"
                 >
                   <FaGithub className="text-lg" />
                   <span>Source Code</span>
@@ -48,7 +48,7 @@ const ProjectCard = (props: IProjectsData) => {
                   href={props.liveLink}
                   target="_blank"
                   rel="noreferrer"
-                  className="w-max h-6 p-1 md:p-4 flex justify-between items-center gap-2 rounded-md border cursor-pointer hover:bg-background hover:text-primary transition-colors"
+                  className="w-max h-6 p-1 md:p-4 flex justify-between items-center gap-2 rounded-md border border-background cursor-pointer hover:bg-background hover:text-primary transition-colors"
                 >
                   <FaExternalLinkAlt className="text-lg" />
                   <span>Live Demo</span>

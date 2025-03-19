@@ -5,7 +5,7 @@ import React from "react";
 const AboutHero = () => {
   return (
     <div className="flex flex-col gap-8 items-center px-6 md:px-12 py-16 w-full min-h-full animateFadeIn">
-      <div className="w-[100px] h-[100px] md:w-[250px] md:h-[250px] rounded-full overflow-hidden bg-secondary flex justify-center items-center">
+      <div className="w-[150px] h-[150px] md:w-[250px] md:h-[250px] rounded-full overflow-hidden bg-secondary flex justify-center items-center">
         <Image
           src="/assets/Profile.JPG"
           width={400}
@@ -50,14 +50,16 @@ const AboutHero = () => {
           </div>
         ))}
       </div>
-
       <div className="w-full max-w-2xl mt-10">
-        <h2 className="text-2xl font-bold text-accent mb-4">Skills</h2>
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 text-center">
+        <h2 className="text-2xl font-bold text-accent mb-6 text-center md:text-left">
+          Skills
+        </h2>
+        <div className="flex flex-wrap justify-center gap-4">
           {Skills.map((skill, index) => (
             <span
               key={index}
-              className="bg-secondary text-background p-2 rounded-lg hover:bg-accent hover:text-primary transition-colors"
+              className="bg-secondary text-background px-4 py-2 rounded-full shadow-md text-sm md:text-base 
+                  animateFadeIn hover:bg-accent hover:text-primary transition-all duration-300 transform hover:scale-105"
             >
               {skill}
             </span>
