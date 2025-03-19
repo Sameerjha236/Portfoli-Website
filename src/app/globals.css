@@ -3,21 +3,21 @@
 @tailwind utilities;
 
 :root {
-  --color-primary: rgb(45, 45, 45);
-  --color-primary-light: rgb(45, 45, 45, 0.8);
-  --color-secondary: rgb(120, 85, 50);
-  --color-accent: rgb(190, 150, 100);
-  --color-background: rgb(242, 236, 226);
-  --color-foreground: rgb(20, 20, 20);
+  --color-primary: #1e1e1e; /* Deep Charcoal Black */
+  --color-primary-light: #3a3a3a; /* Soft Graphite */
+  --color-secondary: #0077b6; /* Vibrant Blue */
+  --color-accent: #00adb5; /* Aqua Teal */
+  --color-background: #fafafa; /* Soft White */
+  --color-foreground: #121212; /* Near Black */
 }
 
 .dark {
-  --color-primary: rgb(230, 230, 230);
-  --color-primary-light: rgb(230, 230, 230, 0.8);
-  --color-secondary: rgb(180, 140, 100);
-  --color-accent: rgb(220, 180, 120);
-  --color-background: rgb(25, 25, 25);
-  --color-foreground: rgb(240, 240, 240);
+  --color-primary: #e0e0e0; /* Light Grey */
+  --color-primary-light: #b0b0b0; /* Muted Silver */
+  --color-secondary: #00adb5; /* Aqua Teal */
+  --color-accent: #0077b6; /* Tech Blue */
+  --color-background: #121212; /* Deep Black */
+  --color-foreground: #f0f0f0; /* Bright White */
 }
 
 body {
