@@ -44,7 +44,7 @@ const Navbar = () => {
               pathname === "/contact" ? "text-accent font-semibold" : ""
             }`}
           >
-            Contacts
+            Contact
           </span>
         </Link>
       </div>

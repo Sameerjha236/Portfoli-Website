@@ -1,13 +1,18 @@
 import { IProjectsData } from "@/Types/IData";
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
+import Image from "next/image";
 
 const ProjectCard = (props: IProjectsData) => {
   return (
     <div className="relative w-72 h-60 md:w-[28rem] md:h-80 lg:md-[30rem] rounded-lg overflow-hidden transition-all duration-300 group shadow-md">
-      <div
-        className="absolute inset-0 bg-cover bg-center transition-transform duration-300 z-0 group-hover:transform group-hover:scale-110"
-        style={{ backgroundImage: `url(${props.imageUrl})` }}
-      ></div>
+      <Image
+        src={props.imageUrl}
+        alt={props.title}
+        fill
+        objectFit="cover"
+        className="absolute inset-0 transition-transform duration-300 z-0 group-hover:transform group-hover:scale-110"
+        priority
+      />
 
       <div className=" flex flex-col items-center justify-around absolute bottom-0 w-full h-14 bg-primaryLight group-hover:h-full md:p-2 text-background transition-all duration-300 group-hover:backdrop-blur-md z-10 ">
         <h2 className="w-full h-10 text-lg flex justify-center items-center font-semibold transition-all duration-300 ">
