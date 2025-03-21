@@ -20,6 +20,11 @@
   --color-foreground: #f0f0f0; /* Bright White */
 }
 
+::selection {
+  color: var(--color-primary);
+  background-color: var(--color-accent);
+}
+
 body {
   background-color: var(--color-background);
   color: var(--color-foreground);
