@@ -61,8 +61,10 @@ const Hero = () => {
 
         <div className="flex space-x-4 mt-6">
           <a
-            href="/assets/Sameer_Jha.pdf"
-            download
+            href="https://drive.google.com/file/d/1eRMijzCW7iGCavEAFqgPStXTb8p3zEp2/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Resume Download"
             className="bg-secondary text-background px-3 py-1 md:px-6 md:py-3 rounded-lg text-lg font-semibold hover:bg-accent transition"
           >
             Download Resume
