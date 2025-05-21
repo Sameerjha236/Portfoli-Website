@@ -17,12 +17,16 @@ const AboutHero = () => {
       </div>
       <div className="max-w-2xl text-lg leading-relaxed text-justify md:text-left mt-6">
         Hey, I&apos;m{" "}
-        <span className="text-accent font-semibold">Sameer Jha</span>, a
-        passionate Frontend Developer with experience in crafting seamless and
-        interactive web experiences. Previously, I worked at{" "}
-        <span className="text-primary font-semibold">Rizzle AI</span>, where I
-        built and optimized web applications using{" "}
-        <span className="font-semibold">React.js, Next.js, and TypeScript</span>
+        <span className="text-accent font-semibold">Sameer Jha</span>, a Systems
+        Engineer currently working at{" "}
+        <span className="text-primary font-semibold">
+          Tata Consultancy Services
+        </span>
+        . I am passionate about crafting seamless and interactive web
+        experiences, with strong skills in{" "}
+        <span className="font-semibold">
+          React.js, Next.js, TypeScript, and Python
+        </span>
         .
       </div>
 

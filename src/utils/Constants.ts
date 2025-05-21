@@ -2,6 +2,12 @@ import { IExperienceData, IProjectsData } from "@/Types/IData";
 
 export const ExpericeData: IExperienceData[] = [
   {
+    company: "Tata Consultancy Services (TCS)",
+    role: "Systems Engineer",
+    timeline: "Apr 2025 - Present",
+    logo: "https://mir-s3-cdn-cf.behance.net/projects/404/a1a934149082851.Y3JvcCwzNDUxLDI3MDAsNzYsMA.jpg", // You can replace with another preferred TCS logo URL
+  },
+  {
     company: "Rizzle AI",
     role: "Trainee Engineer - Frontend",
     timeline: "Sep 2024 - Mar 2025",

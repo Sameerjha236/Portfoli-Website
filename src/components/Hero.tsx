@@ -15,10 +15,10 @@ const Hero = () => {
           Sameer <span className="text-secondary">Jha</span>
         </h1>
 
-        <p className="text-lg md:text-xl leading-relaxed text-justify ">
-          A Frontend Developer with 6 months of experience, previously at Rizzle
-          AI. Passionate about building high-performance, visually stunning, and
-          user-friendly web applications, with a keen focus on optimization and
+        <p className="text-lg md:text-xl leading-relaxed text-justify">
+          Systems Engineer currently working at Tata Consultancy Services,
+          passionate about creating high-performance, visually appealing, and
+          user-friendly web applications. Focused on optimization and delivering
           seamless user experiences.
         </p>
 
