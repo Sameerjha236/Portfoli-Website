@@ -23,11 +23,11 @@ const ThemeToggle = () => {
   return (
     <button
       onClick={toggleTheme}
-      className="relative w-14 h-8 flex items-center bg-gray-300 dark:bg-gray-700 rounded-full p-1 transition-all"
+      className="relative w-20 h-8 flex items-center bg-gray-300 dark:bg-gray-700 rounded-full p-1 transition-all"
     >
       <div
         className={`w-6 h-6 flex items-center justify-center rounded-full bg-white dark:bg-black shadow-md transform transition-transform duration-300 ${
-          isDark ? "translate-x-4 md:translate-x-6" : "translate-x-0"
+          isDark ? "translate-x-3 md:translate-x-6" : "translate-x-0"
         }`}
       >
         {isDark ? (
