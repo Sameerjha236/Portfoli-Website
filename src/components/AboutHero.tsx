@@ -4,8 +4,8 @@ import React from "react";
 
 const AboutHero = () => {
   return (
-    <div className="flex flex-col gap-8 items-center px-6 md:px-12 py-16 w-full min-h-full animateFadeIn">
-      <div className="w-[150px] h-[150px] md:w-[250px] md:h-[250px] rounded-full overflow-hidden bg-secondary flex justify-center items-center">
+    <div className=" h-full w-full  flex flex-col gap-8 items-center px-6 md:px-12 py-16 animateFadeIn">
+      <div className="hidden w-[150px] h-[150px] md:w-[250px] md:h-[250px] rounded-full overflow-hidden bg-secondary md:flex justify-center items-center">
         <Image
           src="/assets/Profile.JPG"
           width={400}

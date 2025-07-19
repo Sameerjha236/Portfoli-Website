@@ -9,7 +9,7 @@ import { JSX } from "react";
 
 const ContactsHero = () => {
   return (
-    <section className="flex flex-col items-center px-6 md:px-12 py-16 w-full min-h-full animateFadeIn">
+    <section className=" w-full h-full flex flex-col items-center px-6 md:px-12 py-16 animateFadeIn">
       <div className="max-w-3xl text-center">
         <h2 className="text-4xl md:text-6xl font-bold mb-4 text-secondary">
           Let&apos;s Connect
