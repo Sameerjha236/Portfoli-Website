@@ -77,9 +77,9 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className=" hidden w-[150px] h-[150px] md:w-[400px] md:h-[400px] rounded-full overflow-hidden bg-secondary md:flex justify-center items-center">
+      <div className="w-[250px] h-[250px] md:w-[400px] mt-8 md:h-[400px] rounded-full overflow-hidden bg-secondary md:flex justify-center items-center">
         <Image
-          src="/assets/Profile.JPG"
+          src="/assets/Me.jpg"
           width={400}
           height={400}
           alt="Sameer Jha"

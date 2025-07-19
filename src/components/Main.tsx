@@ -9,13 +9,13 @@ const Main = () => {
     <main className="snap-y snap-mandatory min-h-screen overflow-y-scroll scroll-smooth">
       <section
         id="hero"
-        className="snap-start scroll-mt-16 h-screen flex justify-center"
+        className="md:h-[85vh] snap-start scroll-mt-16 flex justify-center"
       >
         <Hero />
       </section>
       <section
         id="about"
-        className="snap-start scroll-mt-16 flex justify-center "
+        className="snap-start scroll-mt-16 flex justify-center animateFadeIn"
       >
         <AboutHero />
       </section>
