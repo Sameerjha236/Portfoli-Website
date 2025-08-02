@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import { ResumeLink } from "@/utils/Constants";
 
 const Hero = () => {
   return (
@@ -61,7 +62,7 @@ const Hero = () => {
 
         <div className="flex space-x-4 mt-6">
           <a
-            href="https://drive.google.com/file/d/1eRMijzCW7iGCavEAFqgPStXTb8p3zEp2/view?usp=sharing"
+            href={ResumeLink}
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Resume Download"

@@ -1,5 +1,8 @@
 import { IExperienceData, IProjectsData } from "@/Types/IData";
 
+export const ResumeLink: string =
+  "https://drive.google.com/file/d/1j4GR18rcyE-w091RG3Xne-ldQWUCyh_L/view?usp=drive_link";
+
 export const ExpericeData: IExperienceData[] = [
   {
     company: "Tata Consultancy Services (TCS)",
@@ -21,6 +24,9 @@ export const Skills: string[] = [
   "TypeScript",
   "JavaScript",
   "Python",
+  "Java",
+  "Spring Boot",
+  "MySQL",
   "Node.js",
   "Express.js",
   "C++",
