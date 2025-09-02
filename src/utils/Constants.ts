@@ -1,7 +1,7 @@
 import { IExperienceData, IProjectsData } from "@/Types/IData";
 
 export const ResumeLink: string =
-  "https://drive.google.com/file/d/1j4GR18rcyE-w091RG3Xne-ldQWUCyh_L/view?usp=drive_link";
+  "https://drive.google.com/file/d/1ZSCxf_Dm9FnrEuQp0jXXMY6KHeFiHz2q/view?usp=sharing";
 
 export const ExpericeData: IExperienceData[] = [
   {
